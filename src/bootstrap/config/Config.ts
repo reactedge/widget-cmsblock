@@ -8,7 +8,7 @@ import {
 export interface RuntimeConfig {
     readonly storeCode: string;
     readonly sku: string;
-    readonly category?: string;
+    readonly category?: string | undefined;
 }
 
 export interface CmsBlockApiIntegration {

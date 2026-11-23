@@ -12,7 +12,7 @@ import {
 
 type Props = {
     config: WidgetConfig;
-    bootstrap?: { record: CmsBlockRecord | null };
+    bootstrap?: { record: CmsBlockRecord | null } | undefined;
 };
 
 export const WidgetCmsblock = ({ config, bootstrap }: Props) => {

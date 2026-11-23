@@ -1,12 +1,12 @@
 import { WIDGET_ID } from "./config/Config.ts";
 import type { ReactEdgeRuntimeConfig } from "./config/Config.ts";
-import type { BootstrapData } from "./ssr/render.tsx";
+import type { CmsBlockBootstrap } from "../services/cmsblock/CmsBlockApi.ts";
 import { WidgetView } from "./view/WidgetView.tsx";
 
 interface WidgetRootProps {
     contract: unknown;
     runtime: ReactEdgeRuntimeConfig;
-    bootstrap: BootstrapData;
+    bootstrap: CmsBlockBootstrap;
 }
 
 export function WidgetComponent({ contract, runtime, bootstrap }: WidgetRootProps) {
